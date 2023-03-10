@@ -10,7 +10,7 @@ header{
     border-bottom: 3px solid black;
 }
 .container{
-    width: 1140px;
+    width:  71%; /*RESPONSIVIDADE*/
     margin: auto;
 }
  /*/////////HEADER//////////////////*/
@@ -259,6 +259,52 @@ main{
     display: flex;
     width: 505px;
     height: auto;
+}
+
+
+
+
+@media (max-width:320px){
+    .main_itens{
+        display: block; 
+    }
+    .header_list{
+        display: none;
+    }
+    .main_itens h2{
+        font-size: 38px;
+        margin-bottom: 5px;
+    }
+    .main_itens h2 span{
+        font-size: 45px;
+    }
+    .main_itens p{
+        font-size: 12px;
+        
+    }
+    .main_itens h5{
+        font-size: 10px;
+    }
+    .main_gallery{
+        display: none;
+    }
+
+    #membros .container{
+        width: 95%;
+    }
+    #biblioteca .container{
+        display: block;
+        width: 100%;
+        border-radius: 0;
+    }
+    .book-info{
+        width: 75%;
+        font-size: 12px;
+    }
+    .book-png img{
+        width: 100%;
+    }
+    
 }
 
 
